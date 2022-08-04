@@ -1,0 +1,2 @@
+input_data_folder_name:'folder_aaaa/mynegro/input'
+output_data_folder_name:'folder_aaaa/mynegro/output'

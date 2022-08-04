@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radency Slack Test Task 1 (Console)", "Radency Slack Test Task 1 (Console)\Radency Slack Test Task 1 (Console).csproj", "{DAAE4182-11B4-443F-910A-0FFF84BCDE5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAAE4182-11B4-443F-910A-0FFF84BCDE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAE4182-11B4-443F-910A-0FFF84BCDE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAE4182-11B4-443F-910A-0FFF84BCDE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAE4182-11B4-443F-910A-0FFF84BCDE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AA6DE37-EF73-4673-8CA1-5882EF853CDA}
+	EndGlobalSection
+EndGlobal
