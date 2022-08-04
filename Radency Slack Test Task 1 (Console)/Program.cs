@@ -81,6 +81,7 @@ namespace Radency_Slack_Test_Task_1__Console_ // Note: actual namespace depends 
                     }
                     else
                     {
+
                         Directory.CreateDirectory(@"../../../ProjectData/" + input_folder);
                         Directory.CreateDirectory(@"../../../ProjectData/" + output_folder);
                     }                 
