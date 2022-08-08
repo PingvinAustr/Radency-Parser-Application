@@ -168,7 +168,12 @@ namespace Radency_Slack_Test_Task_1__Console_
         //Читаємо вміст файлів та валідуємо їх
         static void ReadInfoFromFilesAndValidate(List<FileInfo> input_files,string output_file)
         {
-           
+           if (input_files.Count == 0)
+            {
+                Console.Clear();
+                Console.WriteLine("Please place some input files to parse to corresponding directory");
+                return;
+            }
             //Йдемо по кожному з валідних файлів
             foreach (FileInfo input_file in input_files)
             {
@@ -201,15 +206,19 @@ namespace Radency_Slack_Test_Task_1__Console_
             //Якщо  немає створеного meta.log - створюємо та наповнюємо його
             if (!System.IO.File.Exists(@"../../../ProjectData/" + output_file + "/" + date_folder + "/meta.log"))
             {
+                
                 string files_to_log = "";
                 foreach (var item in invalid_files)
                 {
                     files_to_log += item.FullName + ",";                   
                 }
-                files_to_log=files_to_log.Remove(files_to_log.Length-1);
+                if (invalid_files.Count() != 0) files_to_log = files_to_log.Remove(files_to_log.Length - 1);
+                else files_to_log = "";
+
                 string log = "parsed_files:"+num_of_parsed_files+"\nparsed_lines:"+num_of_parsed_lines+"\nfound_errors:"+invalid_lines.Count()+"\ninvalid_files:"+files_to_log;
                 
                 System.IO.File.AppendAllText(@"../../../ProjectData/" + output_file + "/" + date_folder + "/meta.log", log);
+                
             }
             
             //Якщо є створений meta.log - отримуємо його поточні дані й додаємо до них нові
@@ -248,10 +257,12 @@ namespace Radency_Slack_Test_Task_1__Console_
                                     {
                                         history_error_files = str.Remove(0,14);
                                         if (str.IndexOf(item.FullName) == -1)
-                                        {
+                                        {   if (history_error_files == "") history_error_files += item.FullName;
+                                             else 
                                             history_error_files += "," + item.FullName;
                                         }
                                     }
+                                    
                                     break;
                                 }
                         }
@@ -259,7 +270,7 @@ namespace Radency_Slack_Test_Task_1__Console_
                     }
                 }
 
-
+               
                 string log = "parsed_files:" +(history_parsed_files+num_of_parsed_files) + "\nparsed_lines:" +(history_parsed_lines+num_of_parsed_lines) + "\nfound_errors:" + (history_error_lines+invalid_lines.Count()) + "\ninvalid_files:" + history_error_files;
                 System.IO.File.WriteAllText(@"../../../ProjectData/" + output_file + "/" + date_folder + "/meta.log", log);
             }
