@@ -8,9 +8,10 @@ namespace Radency_Slack_Test_Task_1__Console_.Classes
 {
     internal class Payers
     {
-        public string first_name { get; set; }
-        public string last_name { get; set; }
-        public DateTime date { get; set; }
+        public string name { get; set; }
+        public decimal payment { get; set; }
+        public string date { get; set; }
         public long account_name { get; set; }
     }
 }
+

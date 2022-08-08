@@ -1,0 +1,5 @@
+John, Doe, “Lviv, Kleparivska 12, 4”,  500.0, 2022-27-10, 1234567, Water
+Mike, Wiksen, “Lviv, Kleparivska 40, 1”,  720.0, 2022-27-05, 7654321, Heat
+Nick, Potter, “Lviv, Gorodotska 120, 3232”,  880.0, 2022-25-03, “3334444”, Parking
+Luke Pan,, “Lviv, Gorodotska 120, 5”,  40.0, 2022-12-07, 2222111, Gas
+ya get

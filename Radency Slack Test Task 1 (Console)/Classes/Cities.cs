@@ -10,5 +10,6 @@ namespace Radency_Slack_Test_Task_1__Console_.Classes
     {
         public string city { get; set; }
         public List<Services_> services { get; set; }
+        public decimal total { get; set; }
     }
 }
