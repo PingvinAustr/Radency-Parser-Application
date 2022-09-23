@@ -10,8 +10,11 @@ Data from input files is layered (City-->Payments-->People). Application parsers
 
 Project has config file that is located in ProjectDirectory/ProjectData/config.txt
 Application will not function without config file.
+
 Config file content:
+
 ![alt text](https://media.discordapp.net/attachments/627965989899993138/1022841107333255178/unknown.png)
+
 User is able to set folder for input files and for output files.
 
 Application has console interface.
