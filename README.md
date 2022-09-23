@@ -6,7 +6,7 @@ Data from input files is layered (City-->Payments-->People). Application parsers
 ### Example of input file content (txt):
 ![alt text](https://media.discordapp.net/attachments/627965989899993138/1022840279331512350/unknown.png)
 ### Example of input file content (csv): 
-![alt text](https://media.discordapp.net/attachments/627965989899993138/1022840776423637023/unknown.png?width=535&height=676)
+![alt text](https://media.discordapp.net/attachments/627965989899993138/1022845509343395880/unknown.png?width=463&height=676)
 
 Project has config file that is located in ProjectDirectory/ProjectData/config.txt
 Application will not function without config file.
