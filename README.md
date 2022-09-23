@@ -1,4 +1,4 @@
-# Basic C# Console Application
+# C# Console Application
 ## Idea of the application:
 User has several files (.txt / .csv) with data about communal payments of people (Name/Surname/City/Address/PaymentSum/Date/Account/Type(Water, Gas, etc). 
 Input file can contain hundreds/thousands of data rows.
