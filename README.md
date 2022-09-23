@@ -35,7 +35,7 @@ Application has console interface.
 
 #### The most important part - example of output JSON file:
 ![alt text](https://media.discordapp.net/attachments/627965989899993138/1022844924892282940/unknown.png?width=1440&height=586)
-So as shown - all payments are grouped by cities and by service type (gas/heat/etc)
+So as shown - all payments are grouped by cities and by service type (gas/heat/etc) and counts the general payment sum on each level.
 
 ### Notes:
 * LINQ is used where possbile
